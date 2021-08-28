@@ -1,0 +1,20 @@
+$yellow: #ffcd1c;
+$royalblue: #2079c3;
+$skyblue: #a1d2f8;
+$blue: #56adf5;
+$turquoise: #08c4b2;
+$midnight: #002138;
+$grey: #c4c4c4;
+
+// Create a map of the colors to make it easy to define utility classes in the future
+$colors: (
+    yellow: $yellow,
+    royalblue: $royalblue,
+    skyblue: $skyblue,
+    blue: $blue,
+    turquoise: $turquoise,
+    midnight: $midnight,
+    grey: $grey,
+    white: #fff,
+    default: $yellow
+);
