@@ -8,6 +8,16 @@ You can use absolute paths for easy importing. For example, you can import types
 import { TypeName } from "@types";
 ```
 
+## Available aliases:
+
+```
+    "@components/*": ["./src/components/*"]
+    "@types": ["./types.ts"]
+    "@src": ["./src/*"]
+    "@hooks": ["./src/hooks/*"]
+    "@styles": ["./src/styles"]
+```
+
 Context is also set up using a get/set method. 
 When you create new state in context, use the useContextState hook along with the ContextState type to automatically create a get/set object. 
 Example usage:
