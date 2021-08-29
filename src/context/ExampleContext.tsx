@@ -10,17 +10,17 @@ interface ContextProps {
     example: ContextState<string>
 }
 
-export const ShapeContext = createContext<ContextProps>({} as ContextProps);
+export const ExampleContext = createContext<ContextProps>({} as ContextProps);
 
-const ShapeProvider: React.FC = ({children}) => {
+const ExampleProvider: React.FC = ({children}) => {
     const example = useContextState<string>('hello');
     return (
-        <ShapeContext.Provider value={{
+        <ExampleContext.Provider value={{
             example
         }}>
             {children}
-        </ShapeContext.Provider>
+        </ExampleContext.Provider>
     )
 }
 
-export default ShapeProvider;
+export default ExampleProvider;
