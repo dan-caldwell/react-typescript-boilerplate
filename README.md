@@ -2,7 +2,7 @@
 
 This repo uses create-react-app, SCSS, and react-app-rewired to create a nicely organized React app boilerplate.
 
-You can use aliases paths for easy importing (via `babel-plugin-module-resolver`, which is enabled with `customize-cra`). For example, you can import types from the types.ts file by simply doing something like:
+You can use aliases for easy importing (via `babel-plugin-module-resolver`, which is enabled with `customize-cra`). For example, you can import types from the types.ts file by simply doing something like:
 
 ```
 import { TypeName } from "@types";
@@ -50,6 +50,7 @@ const App = () => {
 1. Clone the repo
 2. Run `npm install` to install dependencies
 3. Run `npm start` to start the development server
+4. Run `npm test` to run tests
 
 # Getting Started with Create React App
 
