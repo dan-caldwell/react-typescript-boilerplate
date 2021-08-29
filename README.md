@@ -21,6 +21,8 @@ You can create as many aliases as you want, but these are the pre-made ones.
     "@ExampleContext": ["./src/context/ExampleContext.tsx"]
 ```
 
+Create an alias in config-overrides.js (and add Typescript support in tsconfig.paths.json) by following the example aliases.
+
 ## Using Context
 
 Context is also set up using a get/set method. 
