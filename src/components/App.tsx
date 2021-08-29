@@ -1,9 +1,12 @@
-import '@src/styles/App.scss';
+import '@styles/App.scss';
+import ExampleProvider from '@ExampleContext';
 
 const App: React.FC = () => {
     return (
         <div className="App">
-            Hello world
+            <ExampleProvider>
+                <h1>Hello world</h1>
+            </ExampleProvider>
         </div>
     )
 }

@@ -2,21 +2,26 @@
 
 This repo uses create-react-app, SCSS, and react-app-rewired to create a nicely organized React app boilerplate.
 
-You can use absolute paths for easy importing. For example, you can import types from the types.ts file by simply doing something like:
+You can use aliases paths for easy importing (via `babel-plugin-module-resolver`, which is enabled with `customize-cra`). For example, you can import types from the types.ts file by simply doing something like:
 
 ```
 import { TypeName } from "@types";
 ```
 
-## Available aliases:
+## Available aliases
+
+You can create as many aliases as you want, but these are the pre-made ones.
 
 ```
-    "@components/*": ["./src/components/*"]
     "@types": ["./types.ts"]
-    "@src": ["./src/*"]
-    "@hooks": ["./src/hooks/*"]
-    "@styles": ["./src/styles"]
+    "@components/*": ["./src/components/*"]
+    "@src/*": ["./src/*"]
+    "@styles/*": ["./src/styles/*"]
+    "@hooks/*": ["./src/hooks/*"]
+    "@ExampleContext": ["./src/context/ExampleContext.tsx"]
 ```
+
+## Using Context
 
 Context is also set up using a get/set method. 
 When you create new state in context, use the useContextState hook along with the ContextState type to automatically create a get/set object. 
@@ -37,6 +42,12 @@ const App = () => {
     )
 }
 ```
+
+## How to get started
+
+1. Clone the repo
+2. Run `npm install` to install dependencies
+3. Run `npm start` to start the development server
 
 # Getting Started with Create React App
 

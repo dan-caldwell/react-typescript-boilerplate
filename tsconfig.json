@@ -22,7 +22,8 @@
     "baseUrl": "."
   },
   "include": [
-    "src"
+    "src",
+    "__tests__"
   ],
   "extends": "./tsconfig.paths.json"
 }
